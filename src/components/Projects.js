@@ -35,7 +35,7 @@ export const Projects = () => {
       title: "Portfolio Website",
       description: "A personal portfolio website",
       imgUrl: projImg2,
-      source_code_link: "https://github.com/aj-024",
+      source_code_link: "https://github.com/aj-024/Portfolio",
       techStack: ['HTML', 'CSS', 'JavaScript']
     },
     {
