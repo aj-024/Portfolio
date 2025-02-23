@@ -55,13 +55,14 @@ export const Contact = () => {
     setButtonText("Sending...");
   
     try {
-      let response = await fetch("/api/contact", {
+      let response = await fetch("https://portfolio-anujs-projects-5a26abb1.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json;charset=utf-8",
         },
         body: JSON.stringify(formDetails),
       });
+      
   
       let result = await response.json();
   
