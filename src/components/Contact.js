@@ -25,28 +25,6 @@ export const Contact = () => {
     setStatus({});
   }
 
-  const validateForm = () => {
-    if (!formDetails.firstName || !formDetails.lastName) {
-      setStatus({ success: false, message: 'Please enter both first and last name.' });
-      return false;
-    }
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formDetails.email)) {
-      setStatus({ success: false, message: 'Please enter a valid email address.' });
-      return false;
-    }
-    const phoneRegex = /^[0-9]{10}$/;
-    if (!phoneRegex.test(formDetails.phone)) {
-      setStatus({ success: false, message: 'Please enter a valid 10-digit phone number.' });
-      return false;
-    }
-    if (!formDetails.message) {
-      setStatus({ success: false, message: 'Message field cannot be empty.' });
-      return false;
-    }
-    return true;
-  }
-
   const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -62,22 +40,30 @@ export const Contact = () => {
         },
         body: JSON.stringify(formDetails),
       });
-      
   
-      let result = await response.json();
+      let resultText = await response.text();  // Capture response as text first
+      console.log("Response Text:", resultText);
   
-      if (response.ok && result.code === 200) {
-        setStatus({ success: true, message: "Message sent successfully" });
-      } else {
-        throw new Error(result.status || "Something went wrong, please try again later.");
+      try {
+        let result = JSON.parse(resultText);  // Attempt to parse JSON
+        console.log("Parsed Result:", result);
+  
+        if (response.ok) {
+          setStatus({ success: true, message: "Message sent successfully" });
+        } else {
+          throw new Error(result.message || "Something went wrong, please try again later.");
+        }
+      } catch (jsonError) {
+        throw new Error("Invalid JSON response from server.");
       }
     } catch (error) {
       setStatus({ success: false, message: error.message });
     }
   
     setButtonText("Send");
-    setFormDetails(formInitialDetails); 
+    setFormDetails(formInitialDetails);
   };
+  
   
   
 
