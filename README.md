@@ -26,9 +26,6 @@ A fully responsive and modern **Portfolio Website** built using **React** and **
 ## 📁 Folder Structure
 
 ```bash
-Portfolio1/
-├── build/
-├── node_modules/
 ├── public/
 ├── src/
 │   ├── assets/
