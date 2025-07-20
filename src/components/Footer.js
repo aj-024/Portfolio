@@ -10,8 +10,8 @@ export const Footer = () => {
   return (
     <footer className="footer-container">
   <Container>
-    <Row className="footer-row align-items-center">
-      <Col size={12} sm={6} className="footer-logo">
+    <Row className="footer-row align-items-center py3">
+      <Col xs={12} sm={6} className="footer-logo ">
         <img src={logo} alt="Logo" />
       </Col>
 
