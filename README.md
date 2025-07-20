@@ -26,12 +26,36 @@ A fully responsive and modern **Portfolio Website** built using **React** and **
 ## 📁 Folder Structure
 
 ```bash
-/public
-/src
-  ├── assets/
-  ├── components/
-  ├── App.js
-  ├── index.js
+Portfolio1/
+├── build/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Banner.js
+│   │   ├── Contact.js
+│   │   ├── Footer.js
+│   │   ├── MailchimpForm.js
+│   │   ├── NavBar.js
+│   │   ├── Newsletter.js
+│   │   ├── ProjectCard.js
+│   │   ├── Projects.js
+│   │   ├── Skills.js
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   ├── setupTests.js
+├── .env
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+
 ```
 ## ✨ Features
 ✅ Responsive layout
@@ -45,8 +69,9 @@ A fully responsive and modern **Portfolio Website** built using **React** and **
 ✅ Social media integration (LinkedIn, GitHub, etc.)
 
 ## 🧑‍💻 Author
-# Anuj Jadhav
+**Anuj Jadhav**
 📧 anujjadhav2003@gmail.com
-🔗 LinkedIn | GitHub
+
+🔗 [LinkedIn](https://www.linkedin.com/in/anuj-jadhav-44202422a) | [GitHub](https://github.com/aj-024)
 
 
