@@ -32,7 +32,7 @@ export const Footer = () => {
           </a>
         </div>
         <div className="social-icon">
-          <a href="https://www.instagram.com/anuuuj_" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/anuuj24_" target="_blank" rel="noopener noreferrer">
             <img src={navIcon3} alt="Instagram" />
           </a>
         </div>
