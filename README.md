@@ -3,7 +3,7 @@
 A fully responsive and modern **Portfolio Website** built using **React** and **React-Bootstrap** to showcase my skills, projects, and contact information.
 
 ### 🌐 Live Demo
-👉 [Click here to visit the live site](https://portfolio-b5lmvw1c4-anujs-projects-5a26abb1.vercel.app/)
+👉 [Click here to visit the live site](https://portfolio-anujs-projects-5a26abb1.vercel.app/)
 
 ---
 
