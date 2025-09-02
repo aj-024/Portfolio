@@ -38,48 +38,43 @@ export const Skills = () => {
                 I have expertise in various programming languages, frameworks, and tools, enabling me to build and deploy dynamic applications. Below are the areas where I excel.
               </p>
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                
-                {/* Front-End Development */}
-                <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Front-End Development</h5>
-                  <p>React.js, HTML5, CSS3, Bootstrap, Material-UI</p>
-                </div>
 
-                {/* Back-End Development */}
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Back-End Development</h5>
-                  <p>Node.js, Express.js, RESTful APIs</p>
-                </div>
+  {/* Front-End Development */}
+  <div className="item">
+    <img src={meter3} alt="Image" />
+    <h5>Front-End Development</h5>
+    <p>React.js, Redux Toolkit, HTML5, CSS3, Tailwind CSS, Bootstrap, Material-UI</p>
+  </div>
 
-                {/* Programming Languages */}
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Programming Languages</h5>
-                  <p>C++, Java, JavaScript</p>
-                </div>
+  {/* Back-End Development */}
+  <div className="item">
+    <img src={meter2} alt="Image" />
+    <h5>Back-End Development</h5>
+    <p>Node.js, Express.js, RESTful APIs</p>
+  </div>
 
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Databases</h5>
-                  <p>SQL, MongoDB</p>
-                </div>
+  {/* Programming Languages */}
+  <div className="item">
+    <img src={meter1} alt="Image" />
+    <h5>Programming Languages</h5>
+    <p>JavaScript (ES6+), Java, C++</p>
+  </div>
 
-                {/* Developer Tools */}
-                <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Developer Tools</h5>
-                  <p>VS Code, Eclipse, NetBeans, Android Studio, GitHub</p>
-                </div>
+  {/* Databases */}
+  <div className="item">
+    <img src={meter2} alt="Image" />
+    <h5>Databases</h5>
+    <p>MongoDB, SQL</p>
+  </div>
 
-                {/* UI/UX Design */}
-                <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Frameworks/Libraries</h5>
-                  <p>React, OpenCV, YOLO, CNN Studio</p>
-                </div>
-              </Carousel>
+  {/* Developer Tools */}
+  <div className="item">
+    <img src={meter1} alt="Image" />
+    <h5>Developer Tools</h5>
+    <p> Git, GitHub, VS Code, Eclipse, NetBeans,</p>
+  </div>
+</Carousel>
+
             </div>
           </div>
         </div>
