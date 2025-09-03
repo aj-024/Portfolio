@@ -74,13 +74,14 @@ export const Banner = () => {
                 <button
   className="download-cv"
   onClick={() => {
-    const link = document.createElement("a");
-    link.href = "https://drive.google.com/uc?export=download&id=1viC5OkdlGIUu7jirD-BkX8j-WzIClk3H";
-    link.download = "Anuj_Jadhav_CV.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }}
+  const link = document.createElement("a");
+  link.href = "https://drive.google.com/uc?export=download&id=1JBMsPCRERYt1iCLRikUWjtF69IGlXxz7";
+  link.download = "Anuj_Jadhav_CV.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}}
+
 >
 Download CV 📥
 </button>

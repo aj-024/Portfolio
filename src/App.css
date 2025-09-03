@@ -885,6 +885,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 
+
+
+
+/* For Success and Error Message Styling */
+.success {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.danger {
+  background-color: #f9f7f7; /* Red */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0% {
+    transform: translateX(-5px);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* the end */
+
+
 /* ProjectCard Component Styles */
 
 .project-card {
@@ -961,10 +1015,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  opacity: 0; /* Initially hidden */
-  transition: all 0.3s ease; /* Smooth transition for visibility and glow effect */
+  opacity: 0;
+  /* Initially hidden */
+  transition: all 0.3s ease;
+  /* Smooth transition for visibility and glow effect */
 }
-@media (max-width: 576px) { 
+
+@media (max-width: 576px) {
   .github-logo {
     width: 30px;
     height: 30px;
@@ -977,30 +1034,37 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   height: 50%;
   object-fit: contain;
-  transition: all 0.3s ease; /* Smooth transition for the glow effect */
+  transition: all 0.3s ease;
+  /* Smooth transition for the glow effect */
 }
 
 /* Dimming effect on project image */
 .project-card:hover .project-img img {
-  opacity: 0.6; /* Dim the image when the card is hovered */
+  opacity: 0.6;
+  /* Dim the image when the card is hovered */
 }
 
 /* Glow effect on GitHub logo */
 .project-card:hover .github-logo {
-  opacity: 1; /* Show the logo on hover */
-  background-color: rgba(0, 0, 0, 0.8); /* Darker background to highlight the logo */
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6); /* Glowing effect */
+  opacity: 1;
+  /* Show the logo on hover */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Darker background to highlight the logo */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
+  /* Glowing effect */
 }
 
 /* GitHub logo glow on hover */
 .project-card:hover .github-logo img {
-  filter: drop-shadow(0 0 5px #00ff00) brightness(1.5); /* Green glow effect */
+  filter: drop-shadow(0 0 5px #00ff00) brightness(1.5);
+  /* Green glow effect */
 }
 
 /* Apply hover effects for mobile when tapped */
 @media (max-width: 768px) {
   .project-card:active .project-img img {
-    opacity: 0.6; /* Dim image on tap */
+    opacity: 0.6;
+    /* Dim image on tap */
   }
 
   .project-card:active .github-logo {
@@ -1023,7 +1087,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.5; /* Adjust transparency if needed */
+  opacity: 0.5;
+  /* Adjust transparency if needed */
 }
 
 /* techstack */
@@ -1031,10 +1096,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .project-card .tech-stack {
   display: flex;
-  justify-content: left;  /* Center-align the tech stack */
-  gap: 15px;  /* Add space between tech stack names */
-  margin-top: 12px;  /* Space it below the description */
-  text-align: center;  /* Center-align the tech stack names */
+  justify-content: left;
+  /* Center-align the tech stack */
+  gap: 15px;
+  /* Add space between tech stack names */
+  margin-top: 12px;
+  /* Space it below the description */
+  text-align: center;
+  /* Center-align the tech stack names */
 }
 
 .tech-name {
@@ -1047,62 +1116,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .tech-name:hover {
-  transform: scale(1.1);  /* Slightly increase size on hover */
-  opacity: 1;  /* Fully visible on hover */
+  transform: scale(1.1);
+  /* Slightly increase size on hover */
+  opacity: 1;
+  /* Fully visible on hover */
   color: #fff;
 }
 
 .project-content {
-  margin-bottom: 60px;  /* To avoid overlap with tech stack when it appears */
-}
-
-
-/* For Success and Error Message Styling */
-.success {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  animation: fadeIn 1s ease-in-out;
-}
-
-.danger {
-  background-color: #f9f7f7; /* Red */
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  animation: shake 0.5s ease-in-out;
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Shake Animation */
-@keyframes shake {
-  0% {
-    transform: translateX(-5px);
-  }
-  25% {
-    transform: translateX(5px);
-  }
-  50% {
-    transform: translateX(-5px);
-  }
-  75% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  margin-bottom: 60px;
+  /* To avoid overlap with tech stack when it appears */
 }
 
 
@@ -1115,7 +1138,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(6px);
   animation: fadeIn 0.4s ease-in-out forwards;
 }
 
